@@ -227,12 +227,12 @@ var createTaskActions = function (taskId) {
 
     };
 
-    var dragLeaveHnadler = function (event) {
+    var dragLeaveHandler = function (event) {
         var taskListEl = event.target.closest(".task-list");
         if (taskListEl) {
             taskListEl.removeAttribute("style");
         }
-    }
+    };
 
     pageContentEl.addEventListener("click", taskButtonHandler);
     pageContentEl.addEventListener("change", taskStatusChangeHandler);
